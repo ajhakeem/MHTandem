@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvCurrentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="150dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rlTimeSelectContainer"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="200dp">
+
+            <RelativeLayout
+                android:id="@+id/rlStartTimeView"
+                android:layout_width="200dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvTest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20dp"
+                    android:text=""
+                    android:textColor="@color/orangeStroke" />
+
+                <Button
+                    android:id="@+id/bSetStartTime"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/orangestrokebutton"
+                    android:text="Start time"
+                    android:textColor="@color/orangeStroke"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlEndTimeView"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/rlStartTimeView">
+
+                <TextView
+                    android:id="@+id/tvTest2"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20dp"
+                    android:text=""
+                    android:textColor="@color/orangeStroke" />
+
+                <Button
+                    android:id="@+id/bSetEndTime"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/orangestrokebutton"
+                    android:text="End time"
+                    android:textColor="@color/orangeStroke"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="340dp"
+            android:layout_height="290dp"
+            android:layout_below="@id/rlTimeSelectContainer"
+            android:scrollbars="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/whitewrapper">
+
+            <ListView
+                android:id="@+id/lvFreeTimesList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                ></ListView>
+        </RelativeLayout>
+
+</RelativeLayout>

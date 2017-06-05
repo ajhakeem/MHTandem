@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/whitewrapper">
+
+        <TextView
+            android:id="@+id/tvLoginLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Login"
+            android:textColor="@color/tcBlue"
+            android:textSize="24dp"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/etLoginEmail"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tvLoginLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:hint="email@address.com"
+            android:textColorHint="@color/tcBlue"
+            android:textColor="@color/tcBlue"
+            android:textColorLink="@color/tcBlue"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/etLoginPassword"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:hint="********"
+            android:textColorHint="@color/tcBlue"
+            android:textColor="@color/tcBlue"
+            android:textColorLink="@color/tcBlue"
+            android:layout_below="@id/etLoginEmail"
+            android:layout_marginTop="25dp"
+            android:layout_alignStart="@+id/etLoginEmail"
+            android:layout_centerHorizontal="true"
+            android:inputType="textPassword" />
+        
+        <Button
+            android:id="@+id/bLogin"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:text="Login"
+            android:background="@drawable/orangestrokebutton"
+            android:textColor="@color/orangeStroke"
+            android:layout_below="@id/etLoginPassword"
+            android:layout_marginTop="25dp"
+            android:layout_alignStart="@id/etLoginEmail" />
+
+        <TextView
+            android:id="@+id/tvCreateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account yet?"
+            android:textColor="@color/tcBlue"
+            android:layout_below="@id/bLogin"
+            android:layout_marginTop="120dp"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"/>
+
+        <Button
+            android:id="@+id/bToFacebookLogin"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:text="Facebook"
+            android:layout_below="@id/tvCreateAccount"
+            android:layout_marginTop="7dp"
+            android:layout_alignStart="@id/etLoginEmail"
+            android:background="@drawable/bluegradientbutton" />
+
+        <Button
+            android:id="@+id/bToCreateAccount"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:text="Email"
+            android:textColor="@color/tcBlue"
+            android:layout_below="@id/bToFacebookLogin"
+            android:layout_marginTop="7dp"
+            android:layout_alignStart="@id/etLoginEmail"
+            android:background="@drawable/bluestrokebutton" />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

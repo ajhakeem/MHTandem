@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_image">
+
+    <ImageView
+        android:id="@+id/ivTitleLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo_tandem"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp" />
+
+    <TextView
+        android:id="@+id/tvTitleInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up with:"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ivTitleLogo"
+        android:layout_marginTop="100dp"
+        android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/bTitleFacebookSU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Facebook"
+        android:gravity="center"
+        android:textColor="@color/tcBlue"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvTitleInstruction"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bluestrokebutton"
+        android:drawableLeft="@drawable/icon_facebook"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"/>
+
+    <Button
+        android:id="@+id/bTitleEmailSU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Email"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/bTitleFacebookSU"
+        android:background="@drawable/bluestroketransparent" />
+
+    <TextView
+        android:id="@+id/tvToLogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Login"
+        android:textColor="@color/orangeStroke"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bTitleEmailSU"
+        android:textAlignment="center"
+        android:clickable="true"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

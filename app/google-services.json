@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "47012107541",
+    "firebase_url": "https://tandem-b8ce2.firebaseio.com",
+    "project_id": "tandem-b8ce2",
+    "storage_bucket": "tandem-b8ce2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47012107541:android:c22839f6d8a84d09",
+        "android_client_info": {
+          "package_name": "com.example.jaseem.tandem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47012107541-p1chri63u2lvo7i13u7fel4hom29batk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jaseem.tandem",
+            "certificate_hash": "1baa92e41eda86dff7d30d9e40bafbf9493248a5"
+          }
+        },
+        {
+          "client_id": "47012107541-3oclimrtkhvlaumcb0qetf1ba6jot7k7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4JhPut5DoVHjFuX3xZ0j22iMHV7bkG0I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47012107541-3oclimrtkhvlaumcb0qetf1ba6jot7k7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

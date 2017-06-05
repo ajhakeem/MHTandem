@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/whitewrapper">
+
+        <TextView
+            android:id="@+id/tvSignUpLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Sign Up"
+            android:textColor="@color/tcBlue"
+            android:textSize="24dp"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/etSignupName"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tvSignUpLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/tcBlue"
+            android:textColor="@color/tcBlue"
+            android:textColorLink="@color/tcBlue" />
+
+        <EditText
+            android:id="@+id/etSignupEmail"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/etSignupName"
+            android:inputType="textEmailAddress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:hint="Email"
+            android:textColorHint="@color/tcBlue"
+            android:textColor="@color/tcBlue"
+            android:textColorLink="@color/tcBlue" />
+
+        <EditText
+            android:id="@+id/etSignupPassword"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:hint="********"
+            android:textColorHint="@color/tcBlue"
+            android:textColor="@color/tcBlue"
+            android:textColorLink="@color/tcBlue"
+            android:layout_below="@id/etSignupEmail"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/etSignupUsername"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/etSignupPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:hint="Username"
+            android:textColorHint="@color/tcBlue"
+            android:textColor="@color/tcBlue"
+            android:textColorLink="@color/tcBlue" />
+
+        <Button
+            android:id="@+id/bRegister"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:text="Sign Up"
+            android:textColor="@color/orangeStroke"
+            android:layout_below="@id/etSignupUsername"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/orangestrokebutton"/>
+
+        <TextView
+            android:id="@+id/tvTOSlabel"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="By clicking Sign Up you are agreeing to our Terms of Use and Privacy Policy"
+            android:textColor="@color/tcBlue"
+            android:layout_below="@id/bRegister"
+            android:layout_marginTop="7dp"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
